@@ -1,0 +1,146 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+ 
+  .column {
+    float: left;
+    width: 33.33%;
+    
+  }
+  .column:hover{
+    border-style: double;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .first {
+    float: left;
+    width: 50%;
+    
+  }
+
+
+p{
+font-family:Montserrat;
+font-size: x-large;
+width: 60%;
+margin-left: 100px;
+}
+
+
+
+
+
+
+body::before{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    
+    background: linear-gradient(45deg,red,blue,yellow);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: glower 20s linear infinite;
+   } 
+  
+  @keyframes glower {
+    0% {
+      background-position: 0 0;
+    }
+    
+    50% {
+      background-position: 400% 0;
+    }
+    
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+
+
+
+
+#img_con{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+   
+    transform: rotateY(45deg);
+	animation: rotateAnimation 2s linear infinite;
+} 
+
+ @keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+ } 
+
+body{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+
+
+    text-align: center;
+    font-family: 'Bakbak One', cursive;
+    font-family: 'Corinthia', cursive;
+    font-size: 35px; 
+    font-weight: bolder;
+    margin-top: 20vh;
+    color: #f7efef ;
+}
+
+img{
+  height: 300px;
+  width: 300px;
+  border-style: double;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
